@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Fit - Your Fitness Journey Starts Here</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Click<span style="color: var(--secondary-color)">Fit</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nutrition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-3" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="hero-title animate__animated animate__fadeInDown">Transform Your Body, Transform Your Life</h1>
+                    <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">Join ClickFit and discover the best version of yourself</p>
+                    <a href="#" class="btn btn-primary btn-lg animate__animated animate__fadeInUp animate__delay-2s pulse">Start Your Journey</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-12">
+                    <h2 class="section-title">Why Choose ClickFit</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="feature-box fade-in">
+                        <i class="fas fa-dumbbell feature-icon"></i>
+                        <h3>Expert Training</h3>
+                        <p>Our certified trainers create personalized workout plans to help you achieve your fitness goals efficiently and safely.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-box fade-in">
+                        <i class="fas fa-apple-alt feature-icon"></i>
+                        <h3>Nutrition Guidance</h3>
+                        <p>Get customized meal plans and nutrition advice tailored to your specific goals, preferences, and dietary requirements.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-box fade-in">
+                        <i class="fas fa-heart feature-icon"></i>
+                        <h3>Community Support</h3>
+                        <p>Join our vibrant community of fitness enthusiasts who motivate and support each other throughout their fitness journey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-12">
+                    <h2 class="section-title">Today's Fitness Fact</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="fact-box">
+                        <h4 class="fact-title">On This Day in History</h4>
+                        <div id="fact-content" class="fact-content">
+                            Loading interesting fact...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-users feature-icon"></i>
+                    <div class="stat-number animate__animated animate__fadeIn" data-val="5000">0</div>
+                    <p>Happy Members</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-trophy feature-icon"></i>
+                    <div class="stat-number animate__animated animate__fadeIn" data-val="150">0</div>
+                    <p>Expert Trainers</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-clock feature-icon"></i>
+                    <div class="stat-number animate__animated animate__fadeIn" data-val="1000">0</div>
+                    <p>Training Programs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-12">
+                    <h2 class="section-title">Share Your Fitness Journey</h2>
+                    <p>Upload your transformation photos and inspire others</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div id="upload-area" class="upload-area">
+                        <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                        <h4>Drag & Drop Images Here</h4>
+                        <p>or click to select files</p>
+                        <input type="file" id="file-input" multiple accept="image/*" style="display: none;">
+                    </div>
+                    <div id="upload-preview" class="row"></div>
+                    <div id="upload-status"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="footer-title">About ClickFit</h3>
+                    <p>ClickFit is dedicated to helping you achieve your fitness goals through expert guidance, personalized programs, and community support.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h3 class="footer-title">Programs</h3>
+                    <a href="#" class="footer-link">Weight Loss</a>
+                    <a href="#" class="footer-link">Muscle Building</a>
+                    <a href="#" class="footer-link">Endurance</a>
+                    <a href
+
+="#" class="footer-link">Flexibility</a>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h3 class="footer-title">Support</h3>
+                    <a href="#" class="footer-link">FAQs</a>
+                    <a href="#" class="footer-link">Contact Us</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p>Subscribe to our newsletter for fitness tips, new programs, and special offers.</p>
+                    <div class="input-group mt-3">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center copyright">
+                    <p>© 2025 ClickFit. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
